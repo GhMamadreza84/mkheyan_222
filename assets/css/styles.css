@@ -294,6 +294,9 @@ input[type="checkbox"] {
   color: var(--title-color);
   transition: all 0.3s ease;
 }
+.nav__toggler{
+  display: none;
+}
 /* Active link */
 .active-link,
 .nav__link:hover {
@@ -898,11 +901,25 @@ input[type="checkbox"] {
     overflow: hidden;
     transition: all 0.3s ease;
   }
+  .nav__toggler{
+    display: block;
+    color: var(--text-color);
+    font-size: 1.3rem;
+  }
+  #nav-toggler:checked ~ .nav__list {
+    max-height: 500px;
+    padding: 1.7rem;
+
+  }
+  .home__img{
+    width: 300px;
+
+  }
 }
 
 /* For small devices */
 @media screen and (max-width: 576px) {
-
+  
 }
 
 @media screen and (max-width: 450px) {
